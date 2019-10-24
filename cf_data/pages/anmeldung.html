@@ -1,0 +1,45 @@
+<div class="login-container-fluid">
+    <form data-toggle="validator" role="form" method="GET">
+        <div class="form-group has-feedback">
+            <label for="uservorname" class="control-label">Vorname</label>
+            <input type="text" class="form-control" name="uservorname" id="uservorname" placeholder="Max" pattern="^[_A-z]{1,}$" required>
+            <div class="help-block with-errors">Nur Buchstaben</div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="usernachname" class="control-label">Nachname</label>
+            <input type="text" class="form-control" name="usernachname" id="usernachname" placeholder="Muster" pattern="^[_A-z]{1,}$" required>
+            <div class="help-block with-errors">Nur Buchstaben</div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="useradresse1" class="control-label">Adresse</label>
+            <input type="text" class="form-control" name="useradresse1" id="useradresse1" placeholder="Musterstr." pattern="^[_A-z0-9. ]{1,}$" required>
+            <div class="help-block with-errors">Nur Zahlen und Buchstaben</div>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="useradresse2" id="useradresse2" placeholder="Musterstadt" pattern="^[_A-z ]{1,}$" required>
+            <div class="help-block with-errors">Nur Buchstaben</div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="userplz" class="control-label">PLZ</label>
+            <input type="text" class="form-control" name="userplz" id="userplz" placeholder="45500" pattern="^[_0-9]{1,}$" required>
+            <div class="help-block with-errors">Nur Zahlen</div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="useremail" class="control-label">E-mail</label>
+            <input type="email" class="form-control" name="useremail" id="useremail" placeholder="m.muster@icloud.com" required>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="userpassword" class="control-label">Password</label>
+            <input type="password" class="form-control" name="userpassword" id="userpassword" pattern="^[_A-z0-9]{1,}$" required>
+            <div class="help-block with-errors">Nur Zahlen und Buchstaben</div>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" id="user-password-confirm" data-match="#userpassword" data-match-error="Password don't match" pattern="^[_A-z0-9]{1,}$" required>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" name="anmelden">Anmelden</button>
+        </div>
+    </form>
+</div>
