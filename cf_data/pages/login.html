@@ -1,0 +1,17 @@
+<div class="login-container-fluid">
+    <form data-toggle="validator" role="form" method="GET">
+        <div class="form-group has-feedback">
+            <label for="useremail" class="control-label">E-mail</label>
+            <input type="email" class="form-control" name="useremail" id="useremail" placeholder="m.muster@icloud.com" required>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group has-feedback">
+            <label for="userpassword" class="control-label">Password</label>
+            <input type="password" class="form-control" name="userpassword" id="userpassword" pattern="^[_A-z0-9]{1,}$" required>
+            <div class="help-block with-errors">Nur Zahlen und Buchstaben</div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" name="login">Login</button>
+        </div>
+    </form>
+</div>
