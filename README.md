@@ -36,15 +36,6 @@ CREATE TABLE `php_cf_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Daten für Tabelle `php_cf_users`
---
-
-INSERT INTO `php_cf_users` (`id`, `vorname`, `nachname`, `adresse`, `email`, `kennwort`, `md5_kennwort`, `status`) VALUES
-(5, 'Max', 'Muster', '45500 Musterstadt Musterstr.', 'vlog.dman@gmail.com', 'UKFDR88duo', 'aca730b4b4525e6be51d59922b2d806d', 'Aktive'),
-(6, 'Max', 'Muster', '45000 Demostadt Musterstr.', 'd.makas@icloud.com', 'aslk10Z', '54e80aed5ca058dab02affa3a51fddd8', 'Inaktive'),
-(7, 'Demo', 'Demo', '45500 Demostadt Demostr.', 'vlog.dman2@gmail.com', 'qwerty45', 'aca37f65a3c3087a6effce9a819b8876', 'Aktive');
-
---
 -- Indizes der exportierten Tabellen
 --
 
