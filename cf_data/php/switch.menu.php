@@ -10,9 +10,13 @@
 
         switch($cf_switch_menu){
 
+            // Login page
+
             case 'login':
                 include('cf_data/pages/login.html');
                 break;
+
+            // Register page
 
             case 'anmeldung':
                 include('cf_data/pages/anmeldung.html');

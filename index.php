@@ -110,6 +110,6 @@
 
     // Includes
 
-    // include('cf_data/php/pdo.close.php');
+    include('cf_data/php/pdo.close.php');
 
 ?>

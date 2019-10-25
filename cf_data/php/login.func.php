@@ -19,22 +19,19 @@
             // Errors
 
             $cf_daten_messages = "User didn't exist in System!";
-            $cf_messages = "alert alert-danger messages";
-            header('Refresh: 3, url=index.php?mcontent=login');
+            $cf_messages = "alert alert-danger alert-dismissible messages";
 
         }elseif($cf_logindaten_result['status'] == 'Inaktive'){
 
             $cf_daten_messages = "Please confirm your E-mail first!";
-            $cf_messages = "alert alert-danger messages";
-            header('Refresh: 3, url=index.php?mcontent=login');
+            $cf_messages = "alert alert-danger alert-dismissible messages";
 
         }elseif($cf_logindaten_result['md5_kennwort'] != $cf_logindaten_md5){
 
             // Errors
 
             $cf_daten_messages = "Passwort is not correct!";
-            $cf_messages = "alert alert-danger messages";
-            header('Refresh: 3, url=index.php?mcontent=login');
+            $cf_messages = "alert alert-danger alert-dismissible messages";
 
         }else{
 
